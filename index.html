@@ -4,221 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>SCIPNET</title>
+    <title>SCPINET Format Base</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
-
     <script src="script.js" defer></script>
   </head>
 
   <body>
     <div class="clearance-container">
-      <button class="clearance-button" id="clearanceBtn">
-        INSERT LEVEL 3 CLEARANCE
+      <button
+        class="clearance-button"
+        id="clearanceBtn"
+        aria-controls="scpDocument"
+        aria-expanded="false"
+      >
+        EXAMPLE: REVEAL DOCUMENT
       </button>
-
-      <p id="status" class="vt323-regular"></p>
+      <p id="status" class="vt323-regular" aria-live="polite">
+        Example interactive control
+      </p>
     </div>
 
     <aside class="warning-box access-warning" role="alert">
-      WARNING: Unauthorized access will lead to disciplinary action.
+      Example alert or access warning
     </aside>
-
-    <!-- Hidden document -->
 
     <main class="document" id="scpDocument" hidden>
       <header class="document-header">
-        <h1 class="vt323-regular">SCP-9722</h1>
-
+        <h1 class="vt323-regular">SCP-XXXX</h1>
         <div class="metadata vt323-regular">
-          <span>ITEM #: SCP-9722</span>
-          <span>CLASS: Euclid</span>
-          <span>LEVEL 3</span>
+          <span>ITEM #: XXXX</span>
+          <span class="object-class">CLASS: EXAMPLE</span>
+          <span>ACCESS: LEVEL X</span>
         </div>
       </header>
 
       <section class="containment-section">
         <div class="containment-text">
-          <h2 class="vt323-regular">SPECIAL CONTAIMENT PROCEDURES</h2>
-
+          <h2 class="vt323-regular">Example section heading</h2>
           <figure class="scp-image-container">
-            <img src="img/closet.png" alt="SCP-9722" class="scp-image" />
-
-            <figcaption class="vt323-regular">
-              Entrance to SCP-9722-B.
-            </figcaption>
+            <svg
+              class="scp-image"
+              viewBox="0 0 400 240"
+              role="img"
+              aria-label="Example image placeholder"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="398"
+                height="238"
+                fill="#080f08"
+                stroke="#08eb08"
+              />
+              <text
+                x="200"
+                y="125"
+                fill="#08eb08"
+                font-family="monospace"
+                font-size="24"
+                text-anchor="middle"
+              >
+                IMAGE EXAMPLE
+              </text>
+            </svg>
+            <figcaption class="vt323-regular">Example image caption</figcaption>
           </figure>
-
           <p class="vt323-regular">
-            SCP-9722-A is to be guarded by two Security Personnel with LEVEL-2
-            clearance under the claim that both are security guards for the
-            Hometown Academy. All access to SCP-9722-A needs to be authorized by
-            Dr. Malakai Adebayo and then logged. All personnel entering.
-            SCP-9722-A must wear a bodycam and a tracker to prevent any type of
-            incidents inside SCP-9722-B, as well as being escorted by Security
-            Personnel, all types of equipment brought that are not under the
-            mandatory special containment procedures are to be logged on the
-            expedition log. SCP-9722-1 Instances are to remain contained inside
-            SCP-9722-B until further notice; all interactions with SCP-9722-1
-            Instances are to be logged. SCP-9722-2 Instances are to only
-            interacted with if authorized by Dr. Malakai Adebayo; any samples
-            taken from SCP-9722-2 must be logged and stored in a secure location
-            inside ██████ Hometown, United States of America.
+            Example paragraph. Replace this with your own content.
           </p>
         </div>
       </section>
 
       <section class="description">
-        <h2 class="vt323-regular">DESCRIPTION</h2>
-        <figure class="scp-image-container">
-          <img
-            src="img/castletown.jpg"
-            alt="A view of Castletown inside SCP-9722-B"
-            class="scp-image"
-          />
-          <figcaption class="vt323-regular">Castletown, SCP-9722-B.</figcaption>
-        </figure>
-        <p class="vt323-regular">
-          SCP-9722-A is a school supply closet located within the Hometown
-          Academy. Its interior is dark—pitch dark—and has a temperature of
-          10°C. SCP-9772-A is a dimensional gateway to SCP-9722-B. The exact
-          mechanism and physics behind SCP-9722-A are unknown, but it is
-          theorized that SCP-9722-A causes the side effect of making the room
-          have negative photons, or, in simple terms, negative light. This
-          caused the creation of SCP-9722-B, which could be considered an
-          alternate dimension from our own. SCP-9772-A leads to the town inside
-          SCP-9722-B, which is called "Castletown." SCP-9722-1 instances inhabit
-          Castletown. Due to their large number, it is impossible to catalogue
-          all species currently living inside SCP-9722-B, which might as well be
-          a whole ecosystem that has not yet been discovered.
-        </p>
-        <div class="description-entry">
-          <h3 class="vt323-regular">SCP-9722-1-A</h3>
-          <figure class="scp-image-container">
-            <img src="img/ralsei.jpg" alt="SCP-9722-1-A" class="scp-image" />
-            <figcaption class="vt323-regular">
-              SCP-9722-1-A, artistical depiction.
-            </figcaption>
-          </figure>
-          <p class="vt323-regular">
-            One special instance of SCP-9722-1 is SCP-9722-1-A, a goat-like,
-            anthropomorphic creature that calls itself "The Prince." or
-            "Ralsei." SCP-9722-1-A is docile and friendly, and so far has not
-            shown any hostility; in fact, it has even helped the Foundation
-            understand SCP-9772-B, telling its past and how it works, All
-            interactions involving SCP-9722-1-A must be logged and recorded, and
-            any information it provides must be verified by Dr. Malakai Adebayo.
-          </p>
-        </div>
+        <h2 class="vt323-regular">Example content section</h2>
+        <p class="vt323-regular">Example introductory paragraph.</p>
 
         <div class="description-entry">
-          <h3 class="vt323-regular">SCP-9722-2</h3>
+          <h3 class="vt323-regular">Example subheading</h3>
           <figure class="plant-image-container">
-            <img
-              src="img/wobbly.things.webp"
-              alt="SCP-9722-2 thaumaturgical plant"
+            <svg
               class="plant-image"
-            />
-            <figcaption class="vt323-regular">
-              SCP-9722-2 thaumaturgical plant.
-            </figcaption>
+              viewBox="0 0 160 160"
+              role="img"
+              aria-label="Example compact image placeholder"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="158"
+                height="158"
+                fill="#080f08"
+                stroke="#08eb08"
+              />
+              <text
+                x="80"
+                y="86"
+                fill="#08eb08"
+                font-family="monospace"
+                font-size="14"
+                text-anchor="middle"
+              >
+                IMAGE
+              </text>
+            </svg>
+            <figcaption class="vt323-regular">Example compact caption</figcaption>
           </figure>
           <p class="vt323-regular">
-            There are two regions inside SCP-9722-B: Castletown, and "The Dark
-            Cliffs." The Dark Cliffs are made out of some type of grey rock,
-            similar to stone on the real world and also, made out of dust,
-            multiple symbols involving eyes and other decorations involving
-            unknown symbols are engraved into some parts of The Dark Cliffs.
-            SCP-9722-2 instances live inside The Dark Cliffs. They are a type of
-            white thaumaturgical plant that shoots out petals at anyone nearby.
-            Samples of this plant are still under research and chemical
-            breakdown.
+            Example text beside an image. Replace this with your own content.
           </p>
         </div>
 
-        <div class="description-entry">
-          <h3 class="vt323-regular">The DELTA-RUNE.</h3>
-          <figure class="scp-image-container">
-            <img src="img/images.png" alt="deltarune" class="scp-image" />
-            <figcaption class="vt323-regular">The DELTA-RUNE.</figcaption>
-          </figure>
-          <p class="vt323-regular">
-            The DELTA-RUNE is a symbol that has ties to the Monster-originated
-            religion that surrounds a entity called "The Angel." this symbol has
-            been seen multiple times inside SCP-9722-B, both on The Dark Cliffs
-            and inside Castletown. The three triangels that are present inside
-            the symbol are theorized to be the following: "The Human." (Kris
-            Dreemur.) "The Monser." (Susie ██████) and "The Prince." (Ralsei.),
-            This symbol is directly tied to "The Prophecy."
-          </p>
+        <aside class="info-box" role="note">
+          <h3 class="vt323-regular">Example information box</h3>
+          <p class="vt323-regular">Example supporting text.</p>
+        </aside>
+
+        <aside class="warning-box" role="note">
+          <h3 class="vt323-regular">Example warning box</h3>
+          <p class="vt323-regular">Example warning text.</p>
+        </aside>
+
+        <div class="addendum">
+          <h3 class="vt323-regular">Example addendum</h3>
+          <p class="vt323-regular">Example addendum text.</p>
         </div>
 
-        <div class="description-entry">
-          <h3 class="vt323-regular">The Prophecy:</h3>
-          <p>
-            The following text describes a possible CK-Reality-Restructuring
-            event.
-          </p>
-          <div class="prophecy-box">
-            <p class="vt323-regular">
-              Once upon a time, a LEGEND was whispered among shadows. It was a
-              LEGEND of HOPE. It was a LEGEND of DREAMS. It was a LEGEND of
-              LIGHT. It was a LEGEND of DARK. This is the legend of DELTA RUNE
-              For millenia,LIGHT and DARK have lived in balance, Bringing peace
-              to the WORLD. But if this harmony were to shatter... A terrible
-              calamity would occur. The sky will run black with terror And the
-              land will crack with fear. Then, her heart pounding... The EARTH
-              will draw her final breath. Only then, shining with hope... Three
-              HEROES appear at WORLDS' edge. A HUMAN, A MONSTER, And a PRINCE
-              FROM THE DARK. Only they can seal the fountains And banish the
-              ANGEL'S HEAVEN. Only then will balance be restored, And the WORLD
-              saved from destruction. Today, the FOUNTAIN OF DARKNESS- The
-              geyser that gives this land form- Stands tall at the center of the
-              kingdom. But recently, another fountain has appeared on the
-              horizon... And with it, the balance of LIGHT and DARK begins to
-              shift...
-            </p>
-          </div>
+        <h2 class="vt323-regular">Example image gallery</h2>
+        <div class="image-gallery" id="example-gallery">
+          <figure>
+            <svg
+              viewBox="0 0 400 240"
+              role="img"
+              aria-label="First example gallery image"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="398"
+                height="238"
+                fill="#080f08"
+                stroke="#08eb08"
+              />
+              <text
+                x="200"
+                y="125"
+                fill="#08eb08"
+                font-family="monospace"
+                font-size="24"
+                text-anchor="middle"
+              >
+                IMAGE 1
+              </text>
+            </svg>
+            <figcaption class="vt323-regular">Example gallery caption</figcaption>
+          </figure>
+          <figure>
+            <svg
+              viewBox="0 0 400 240"
+              role="img"
+              aria-label="Second example gallery image"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="398"
+                height="238"
+                fill="#080f08"
+                stroke="#08eb08"
+              />
+              <text
+                x="200"
+                y="125"
+                fill="#08eb08"
+                font-family="monospace"
+                font-size="24"
+                text-anchor="middle"
+              >
+                IMAGE 2
+              </text>
+            </svg>
+            <figcaption class="vt323-regular">Example gallery caption</figcaption>
+          </figure>
+        </div>
+
+        <h2 class="vt323-regular">Example highlighted text</h2>
+        <div class="prophecy-box">
+          <p class="vt323-regular">Example centered content block</p>
         </div>
       </section>
 
       <details class="level4-notice-container">
-        <summary class="clearance-button">VIEW NOTICE</summary>
-        <aside class="level4-notice" role="note" aria-label="Notice">
-          <h3 class="vt323-regular">NOTICE</h3>
+        <summary class="clearance-button">Example expandable notice</summary>
+        <aside class="level4-notice" role="note" aria-label="Example notice">
+          <h3 class="vt323-regular">Example notice heading</h3>
           <div class="level4-notice-content">
-            <p>
-              POI-3721 (Kris Dreemur.) And POI-3722 (Susie ██████) are to be
-              always allowed acess to SCP-9722, Due to POI-3721 being the
-              "Human" and POI-3722 being the "Monster." from the prophecy, they
-              are to be protected at all costs, only they are capable of
-              preventing a CK-Reality-Restructuring event from happening, and
-              they are to be housed inside Hometown for maximum comfort, Dr
-              Adebayo is to be in charge of their well-being and safety, as well
-              as Toriel Dreemu and Asgore Dreemur, contact with both parental
-              guardians are obrigatory and required to maintain well being of
-              both.
-            </p>
+            <p class="vt323-regular">Example expandable notice content.</p>
           </div>
         </aside>
       </details>
 
       <a
         class="secret-link"
-        href="https://scp-wiki.wikidot.com/scp-021-j"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="most dangerous anomaly ever created"
+        href="#example-gallery"
+        aria-label="Example in-page link"
       >
-        ?
+        #
       </a>
     </main>
   </body>
