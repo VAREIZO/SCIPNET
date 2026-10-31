@@ -1,339 +1,327 @@
-
 /* =========================
    GLOBAL SETTINGS
 ========================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    font-family: "VT323", monospace;
-    padding: 20px;
-    color: rgb(8, 235, 8);
+  background-color: black;
+  font-family: "VT323", monospace;
+  padding: 20px;
+  color: rgb(8, 235, 8);
 }
 
 .vt323-regular {
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(8, 235, 8);
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(8, 235, 8);
 }
-
 
 /* =========================
    CLEARANCE INTERFACE
 ========================= */
 
 .clearance-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
 }
 
 .clearance-button {
-    font-family: "VT323", monospace;
-    font-size: 24px;
+  font-family: "VT323", monospace;
+  font-size: 24px;
 
-    color: rgb(8, 235, 8);
-    background: black;
+  color: rgb(8, 235, 8);
+  background: black;
 
-    border: 1px solid rgb(8, 235, 8);
-    padding: 12px 25px;
+  border: 1px solid rgb(8, 235, 8);
+  padding: 12px 25px;
 
-    cursor: pointer;
-    transition: 0.2s ease;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
 .clearance-button:hover {
-    background: rgb(8, 235, 8);
-    color: black;
-    box-shadow: 0 0 12px rgba(8, 235, 8, 0.5);
+  background: rgb(8, 235, 8);
+  color: black;
+  box-shadow: 0 0 12px rgba(8, 235, 8, 0.5);
 }
 
 .clearance-button:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 .clearance-button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 #status {
-    font-size: 20px;
-    text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
-
 
 /* =========================
    DOCUMENT CONTAINER
 ========================= */
 
 #scpDocument[hidden] {
-    display: none;
+  display: none;
 }
 
 .document {
-    width: 100%;
-    max-width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 
-    margin: 40px auto;
-    padding: 35px;
+  margin: 40px auto;
+  padding: 35px;
 
-    background-color: #050505;
-    border: 1px solid rgb(8, 235, 8);
+  background-color: #050505;
+  border: 1px solid rgb(8, 235, 8);
 
-    box-shadow: 0 0 15px rgba(8, 235, 8, 0.12);
+  box-shadow: 0 0 15px rgba(8, 235, 8, 0.12);
 }
-
 
 /* =========================
    DOCUMENT HEADER
 ========================= */
 
 .document-header {
-    border-bottom: 2px solid rgb(8, 235, 8);
+  border-bottom: 2px solid rgb(8, 235, 8);
 
-    padding-bottom: 20px;
-    margin-bottom: 25px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
 
-    text-align: center;
+  text-align: center;
 }
 
 .document-header h1 {
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
-
 
 /* =========================
    METADATA
 ========================= */
 
 .document-header .metadata {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    flex-wrap: wrap;
-    gap: 35px;
+  flex-wrap: wrap;
+  gap: 35px;
 
-    margin-top: 15px;
+  margin-top: 15px;
 
-    font-size: 24px;
-    color: rgb(8, 235, 8);
+  font-size: 24px;
+  color: rgb(8, 235, 8);
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .object-class {
-    font-weight: bold;
-    color: rgb(8, 235, 8);
+  font-weight: bold;
+  color: rgb(8, 235, 8);
 }
-
 
 /* =========================
    TYPOGRAPHY
 ========================= */
 
 .document h1 {
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
 .document h2 {
-    font-size: 28px;
-    font-weight: 400;
+  font-size: 28px;
+  font-weight: 400;
 
-    border-bottom: 1px solid rgb(8, 235, 8);
+  border-bottom: 1px solid rgb(8, 235, 8);
 
-    padding-bottom: 8px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+  padding-bottom: 8px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .document h3 {
-    font-size: 23px;
-    font-weight: 400;
+  font-size: 23px;
+  font-weight: 400;
 
-    margin-top: 20px;
-    margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .document p {
-    font-size: 20px;
-    line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 
-    margin-bottom: 15px;
-    text-align: justify;
+  margin-bottom: 15px;
+  text-align: justify;
 }
-
 
 /* =========================
    INFORMATION BOXES
 ========================= */
 
 .info-box {
-    padding: 18px;
-    margin: 20px 0;
+  padding: 18px;
+  margin: 20px 0;
 
-    background: #080f08;
-    border: 1px solid rgb(8, 235, 8);
+  background: #080f08;
+  border: 1px solid rgb(8, 235, 8);
 }
 
 .warning-box {
-    padding: 18px;
-    margin: 20px 0;
+  padding: 18px;
+  margin: 20px 0;
 
-    background: #160505;
-    border-left: 4px solid #ff3333;
+  background: #160505;
+  border-left: 4px solid #ff3333;
 
-    color: #ff5555;
+  color: #ff5555;
 }
 
 .addendum {
-    padding: 18px;
-    margin: 25px 0;
+  padding: 18px;
+  margin: 25px 0;
 
-    background: #080f08;
-    border-left: 3px solid rgb(8, 235, 8);
+  background: #080f08;
+  border-left: 3px solid rgb(8, 235, 8);
 
-    color: rgb(8, 235, 8);
+  color: rgb(8, 235, 8);
 }
 
 .info-box h3,
 .warning-box h3,
 .addendum h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 
 /* =========================
    REDACTED TEXT
 ========================= */
 
 .redacted {
-    background-color: black;
-    color: black;
+  background-color: black;
+  color: black;
 
-    padding: 0 5px;
+  padding: 0 5px;
 
-    user-select: none;
-    white-space: nowrap;
+  user-select: none;
+  white-space: nowrap;
 }
-
 
 /* =========================
    IMAGES
 ========================= */
 
 .scp-image {
-    max-width: 650px;
-    margin: 30px auto;
-    text-align: center;
+  max-width: 650px;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .scp-image img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 
-    border: 1px solid rgb(8, 235, 8);
-    padding: 4px;
-    background: black;
+  border: 1px solid rgb(8, 235, 8);
+  padding: 4px;
+  background: black;
 }
 
 .scp-image figcaption {
-    color: rgb(8, 235, 8);
-    font-size: 16px;
-    margin-top: 8px;
+  color: rgb(8, 235, 8);
+  font-size: 16px;
+  margin-top: 8px;
 }
-
 
 /* =========================
    IMAGE GALLERY
 ========================= */
 
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 15px;
-    margin: 25px 0;
+  gap: 15px;
+  margin: 25px 0;
 }
 
 .image-gallery img {
-    width: 100%;
-    height: 220px;
+  width: 100%;
+  height: 220px;
 
-    object-fit: cover;
-    border: 1px solid rgb(8, 235, 8);
+  object-fit: cover;
+  border: 1px solid rgb(8, 235, 8);
 }
 
 .image-gallery figcaption {
-    font-size: 16px;
-    color: rgb(8, 235, 8);
-    margin-top: 5px;
+  font-size: 16px;
+  color: rgb(8, 235, 8);
+  margin-top: 5px;
 }
-
 
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
 
 @media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
 
-    body {
-        padding: 10px;
-    }
+  .document {
+    padding: 25px 18px;
+    margin: 20px auto;
+  }
 
-    .document {
-        padding: 25px 18px;
-        margin: 20px auto;
-    }
+  .document-header h1 {
+    font-size: 38px;
+  }
 
-    .document-header h1 {
-        font-size: 38px;
-    }
+  .document-header .metadata {
+    gap: 12px;
+    font-size: 20px;
+  }
 
-    .document-header .metadata {
-        gap: 12px;
-        font-size: 20px;
-    }
+  .document h2 {
+    font-size: 23px;
+  }
 
-    .document h2 {
-        font-size: 23px;
-    }
+  .document h3 {
+    font-size: 20px;
+  }
 
-    .document h3 {
-        font-size: 20px;
-    }
+  .document p {
+    font-size: 17px;
+  }
 
-    .document p {
-        font-size: 17px;
-    }
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
 
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
+  .image-gallery img {
+    height: auto;
+  }
 
-    .image-gallery img {
-        height: auto;
-    }
-
-    .clearance-button {
-        font-size: 20px;
-    }
+  .clearance-button {
+    font-size: 20px;
+  }
 }
