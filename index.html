@@ -188,24 +188,10 @@
         </div>
       </section>
 
-      <div class="level4-notice-container">
-        <button
-          class="clearance-button"
-          id="level4NoticeBtn"
-          type="button"
-          aria-controls="level4Notice"
-          aria-expanded="false"
-        >
-          VIEW NOTICE
-        </button>
-        <aside
-          class="level4-notice"
-          id="level4Notice"
-          role="note"
-          aria-labelledby="level4NoticeTitle"
-          hidden
-        >
-          <h3 class="vt323-regular" id="level4NoticeTitle">NOTICE</h3>
+      <details class="level4-notice-container">
+        <summary class="clearance-button">VIEW NOTICE</summary>
+        <aside class="level4-notice" role="note" aria-label="Notice">
+          <h3 class="vt323-regular">NOTICE</h3>
           <div class="level4-notice-content">
             <p>
               POI-3721 (Kris Dreemur.) And POI-3722 (Susie ██████) are to be
@@ -220,7 +206,7 @@
             </p>
           </div>
         </aside>
-      </div>
+      </details>
     </main>
   </body>
 </html>

@@ -201,6 +201,14 @@ body {
   margin-top: 35px;
 }
 
+.level4-notice-container > summary {
+  list-style: none;
+}
+
+.level4-notice-container > summary::-webkit-details-marker {
+  display: none;
+}
+
 .level4-notice {
   width: 100%;
   padding: 20px;
