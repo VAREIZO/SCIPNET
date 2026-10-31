@@ -31,11 +31,7 @@ jobs:
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            index.html
-            style.css
-            script.js
-            img/
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
