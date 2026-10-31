@@ -239,6 +239,18 @@ body {
   margin-bottom: 0;
 }
 
+.prophecy-box {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 700px;
+  min-height: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgb(8, 235, 8);
+  background: #080f08;
+  text-align: center;
+}
+
 .description-entry .scp-image-container,
 .description-entry .plant-image-container {
   grid-area: image;
