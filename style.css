@@ -75,6 +75,7 @@ body {
 }
 
 .document {
+  position: relative;
   width: 100%;
   max-width: 1000px;
   margin: 40px auto;
@@ -82,6 +83,25 @@ body {
   background-color: #050505;
   border: 1px solid rgb(8, 235, 8);
   box-shadow: 0 0 15px rgba(8, 235, 8, 0.12);
+}
+
+.secret-link {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  color: rgb(8, 235, 8);
+  text-decoration: none;
+  opacity: 0.02;
+  transition: opacity 0.2s ease;
+}
+
+.secret-link:hover,
+.secret-link:focus-visible {
+  opacity: 1;
 }
 
 /* =========================
