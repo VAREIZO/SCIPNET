@@ -176,6 +176,15 @@ body {
   color: #ff5555;
 }
 
+.access-warning {
+  max-width: 700px;
+  margin: 20px auto;
+  border: 1px solid #ff3333;
+  border-left-width: 4px;
+  font-size: 24px;
+  text-align: center;
+}
+
 .addendum {
   padding: 18px;
   margin: 25px 0;
@@ -194,11 +203,18 @@ body {
    IMAGES
 ========================= */
 
+.containment-section {
+  display: flow-root;
+}
+
 .scp-image-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 25px 0;
+  float: right;
+  width: 42%;
+  max-width: 400px;
+  margin: 0 0 20px 30px;
 }
 
 .scp-image {
@@ -209,6 +225,10 @@ body {
   border: 1px solid rgb(8, 235, 8);
   padding: 4px;
   background: black;
+}
+
+.containment-text h2:first-child {
+  margin-top: 0;
 }
 
 .scp-image-container figcaption {
@@ -278,6 +298,12 @@ body {
 
   .image-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .scp-image-container {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
   }
 
   .image-gallery img {
