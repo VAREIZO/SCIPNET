@@ -360,13 +360,7 @@ body {
   margin: 25px 0;
 }
 
-.image-gallery figure {
-  margin: 0;
-}
-
-.image-gallery img,
-.image-gallery svg {
-  display: block;
+.image-gallery img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -432,8 +426,7 @@ body {
     max-width: 140px;
   }
 
-  .image-gallery img,
-  .image-gallery svg {
+  .image-gallery img {
     height: auto;
   }
 
