@@ -1,25 +1,45 @@
+
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: black;
+    background-color: black;
+    font-family: "VT323", monospace;
+    padding: 20px;
+    color: rgb(8, 235, 8);
 }
 
 .vt323-regular {
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(8, 235, 8);
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(8, 235, 8);
 }
+
+
+/* =========================
+   CLEARANCE INTERFACE
+========================= */
+
 .clearance-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 25px 0;
+    gap: 12px;
+    margin: 40px 0;
 }
 
 .clearance-button {
     font-family: "VT323", monospace;
-    font-size: 22px;
+    font-size: 24px;
 
     color: rgb(8, 235, 8);
     background: black;
@@ -31,24 +51,39 @@ body {
     transition: 0.2s ease;
 }
 
-/* Mouse hover */
 .clearance-button:hover {
     background: rgb(8, 235, 8);
     color: black;
     box-shadow: 0 0 12px rgba(8, 235, 8, 0.5);
 }
 
-/* When clicked */
 .clearance-button:active {
     transform: scale(0.97);
 }
+
+.clearance-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#status {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* =========================
+   DOCUMENT CONTAINER
+========================= */
 
 #scpDocument[hidden] {
     display: none;
 }
 
 .document {
+    width: 100%;
     max-width: 1000px;
+
     margin: 40px auto;
     padding: 35px;
 
@@ -58,20 +93,46 @@ body {
     box-shadow: 0 0 15px rgba(8, 235, 8, 0.12);
 }
 
+
+/* =========================
+   DOCUMENT HEADER
+========================= */
+
 .document-header {
-    border-bottom: 3px solid rgb(8, 235, 8);
+    border-bottom: 2px solid rgb(8, 235, 8);
+
     padding-bottom: 20px;
     margin-bottom: 25px;
+
+    text-align: center;
 }
+
+.document-header h1 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   METADATA
+========================= */
 
 .document-header .metadata {
     display: flex;
-    justify-content: space-between;
+
+    justify-content: center;
+    align-items: center;
+
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 35px;
+
     margin-top: 15px;
+
     font-size: 24px;
     color: rgb(8, 235, 8);
+
     text-transform: uppercase;
 }
 
@@ -80,47 +141,76 @@ body {
     color: rgb(8, 235, 8);
 }
 
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
 .document h1 {
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 400;
     letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
 .document h2 {
-    font-size: 23px;
-    font-weight: 700;
-    border-bottom: 2px solid rgb(8, 235, 8);
-    padding-bottom: 6px;
+    font-size: 28px;
+    font-weight: 400;
+
+    border-bottom: 1px solid rgb(8, 235, 8);
+
+    padding-bottom: 8px;
     margin-top: 30px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 .document h3 {
-    font-size: 15px;
+    font-size: 23px;
+    font-weight: 400;
+
     margin-top: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .document p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 14px;
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin-bottom: 15px;
     text-align: justify;
+}
+
+
+/* =========================
+   INFORMATION BOXES
+========================= */
+
+.info-box {
+    padding: 18px;
+    margin: 20px 0;
+
+    background: #080f08;
+    border: 1px solid rgb(8, 235, 8);
 }
 
 .warning-box {
     padding: 18px;
     margin: 20px 0;
-    background: #f8e5e5;
-    border-left: 5px solid #a32626;
+
+    background: #160505;
+    border-left: 4px solid #ff3333;
+
+    color: #ff5555;
 }
 
 .addendum {
     padding: 18px;
     margin: 25px 0;
-    background: #f2f2f2;
-    border-left: 3px solid #555;
+
+    background: #080f08;
+    border-left: 3px solid rgb(8, 235, 8);
+
+    color: rgb(8, 235, 8);
 }
 
 .info-box h3,
@@ -129,9 +219,57 @@ body {
     margin-top: 0;
 }
 
+
+/* =========================
+   REDACTED TEXT
+========================= */
+
+.redacted {
+    background-color: black;
+    color: black;
+
+    padding: 0 5px;
+
+    user-select: none;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.scp-image {
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.scp-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border: 1px solid rgb(8, 235, 8);
+    padding: 4px;
+    background: black;
+}
+
+.scp-image figcaption {
+    color: rgb(8, 235, 8);
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   IMAGE GALLERY
+========================= */
+
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 15px;
     margin: 25px 0;
 }
@@ -139,34 +277,63 @@ body {
 .image-gallery img {
     width: 100%;
     height: 220px;
+
     object-fit: cover;
-    border: 1px solid #999;
+    border: 1px solid rgb(8, 235, 8);
 }
 
 .image-gallery figcaption {
-    font-size: 11px;
-    color: #666;
+    font-size: 16px;
+    color: rgb(8, 235, 8);
     margin-top: 5px;
 }
 
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
 @media (max-width: 600px) {
+
     body {
         padding: 10px;
     }
 
     .document {
         padding: 25px 18px;
+        margin: 20px auto;
     }
 
-    .document h1 {
-        font-size: 25px;
+    .document-header h1 {
+        font-size: 38px;
+    }
+
+    .document-header .metadata {
+        gap: 12px;
+        font-size: 20px;
     }
 
     .document h2 {
         font-size: 23px;
     }
 
+    .document h3 {
+        font-size: 20px;
+    }
+
     .document p {
-        font-size: 13px;
+        font-size: 17px;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .image-gallery img {
+        height: auto;
+    }
+
+    .clearance-button {
+        font-size: 20px;
     }
 }
