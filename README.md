@@ -127,10 +127,9 @@ Keep the `@media (max-width: 600px)` rules near the end of `style.css` in mind w
 
 ## JavaScript
 
-`script.js` demonstrates a button that reveals the document, updates the status message, and disables itself. If you change the button or document IDs in the HTML, update the matching selectors in `script.js` too:
+`script.js` demonstrates a button that displays a verification message, reveals the document, and disables itself. If you change the button or document IDs in the HTML, update the matching selectors in `script.js` too:
 
 - `clearanceBtn`
 - `scpDocument`
-- `status`
 
 For any new interactive control, use a real button or native HTML control, and keep its state and accessible labels updated.
