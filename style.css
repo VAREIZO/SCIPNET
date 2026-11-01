@@ -338,6 +338,28 @@ body {
   margin-top: 8px;
 }
 
+.single-large-image {
+  width: 100%;
+  max-width: 640px;
+  margin: 20px auto 30px;
+}
+
+.single-large-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgb(8, 235, 8);
+  padding: 4px;
+  background: black;
+}
+
+.single-large-image figcaption {
+  color: rgb(8, 235, 8);
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .plant-image {
   display: block;
   width: 100%;
